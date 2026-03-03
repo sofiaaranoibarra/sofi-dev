@@ -1,0 +1,35 @@
+@use "variables" as v;
+
+@mixin container {
+  width: 90%;
+  max-width: v.$container-max;
+  margin: auto;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin card {
+  border-radius: v.$radius;
+  transition: v.$transition;
+}
+
+// Breakpoints
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+
+@mixin sm {
+  @media (max-width: $bp-sm) { @content; }
+}
+
+@mixin md {
+  @media (max-width: $bp-md) { @content; }
+}
+
+@mixin lg {
+  @media (max-width: $bp-lg) { @content; }
+}

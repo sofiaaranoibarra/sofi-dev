@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as v;
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  input,
+  textarea {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid v.$border-light;
+  }
+}
+
+.form-response {
+  margin-top: 1rem;
+}

@@ -1,0 +1,24 @@
+// styles.scss (entrypoint)
+@use "abstracts/variables";
+@use "abstracts/mixins";
+
+@use "base/reset";
+@use "base/globals";
+
+@use "layout/navbar";
+@use "layout/footer";
+
+@use "components/buttons";
+@use "components/cards";
+@use "components/forms";
+
+@use "pages/index";
+
+@use "themes/dark";
+
+@use "abstracts";
+@use "base";
+@use "layout";
+@use "components";
+@use "pages";
+@use "themes";

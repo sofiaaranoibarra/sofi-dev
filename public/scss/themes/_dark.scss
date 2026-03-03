@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as v;
+
+body.dark-mode {
+  background-color: v.$dark-bg;
+  color: v.$text-light;
+
+  .skill-card {
+    background: v.$muted-dark;
+  }
+
+  .footer {
+    background: v.$muted-dark;
+  }
+
+  .navbar.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    background: v.$muted-dark;
+    color: white;
+    border: 1px solid v.$border-dark;
+  }
+}

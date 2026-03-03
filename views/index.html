@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sofia Arano | Desarrolladora Web</title>
+
+    <!---Icono de pestaña-->
+    <link rel="shortcut icon" href="/public/img/icono.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/public/css/styles.css" />
+
+    <!-- JS -->
+    <script src="/public/js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="/public/img/logo1.png" alt="Logo Sofia Arano" />
+            </a>
+
+            <!-- Backdrop (solo se usa en mobile, pero lo dejamos siempre) -->
+            <div class="nav-backdrop" id="navBackdrop"></div>
+
+            <nav>
+                <!-- Botón hamburguesa -->
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+                    ☰
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+
+                    <li class="theme-item">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" aria-pressed="false">
+                            <svg class="theme-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path id="themeIconPath" d=""></path>
+                            </svg>
+                            <span class="theme-label">Cambiar tema</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h2>Hola, soy Sofia 👋</h2>
+            <p class="subtitle">
+                Desarrolladora full stack en formación, apasionada de los codigos,
+                bases de datos, la ciberseguridad, la creación de soluciones eficientes y seguir sumando conocimientos.
+            </p>
+            <a href="#projects" class="btn-primary">Ver mis proyectos</a>
+        </div>
+    </section>
+
+    <div class="section-divider" id="divider" aria-hidden="true"></div>
+
+    <!-- SOBRE MÍ -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>
+                Actualmente estoy profundizando en desarrollo backend con Node.js,
+                bases de datos SQL y buenas prácticas de seguridad informática.
+                Me interesa construir aplicaciones sólidas, seguras y bien estructuradas.
+            </p>
+
+            <div class="skills">
+
+                <div class="skill-card">
+                    <svg class="skill-icon" viewBox="0 0 24 24">
+                        <rect x="4" y="4" width="16" height="16" rx="3" />
+                        <text x="12" y="14" text-anchor="middle" font-size="6" fill="currentColor">Ps</text>
+                    </svg>
+                    <span>Adobe Photoshop</span>
+                </div>
+
+                <div class="skill-card">
+                    <svg class="skill-icon" viewBox="0 0 24 24">
+                        <rect x="4" y="4" width="16" height="16" rx="3" />
+                        <text x="12" y="14" text-anchor="middle" font-size="6" fill="currentColor">Ai</text>
+                    </svg>
+                    <span>Adobe Illustrator</span>
+                </div>
+
+                <div class="skill-card">
+                    <svg class="skill-icon" viewBox="0 0 24 24">
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                    </svg>
+                    <span>HTML5</span>
+                </div>
+
+                <div class="skill-card">
+                    <svg class="skill-icon" viewBox="0 0 24 24">
+                        <path d="M6 4h12l-1 16-5 2-5-2L6 4z" />
+                    </svg>
+                    <span>CSS</span>
+                </div>
+
+                <div class="skill-card">
+                    <svg class="skill-icon" viewBox="0 0 24 24">
+                        <path d="M7 17c4-2 6-5 5-7-1-2-5 0-5 2 0 3 5 2 5 4 0 2-2 3-5 3" />
+                    </svg>
+                    <span>SASS</span>
+                </div>
+
+                <div class="skill-card">
+                    <svg class="skill-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="8" />
+                        <text x="12" y="14" text-anchor="middle" font-size="6" fill="currentColor">WP</text>
+                    </svg>
+                    <span>WordPress</span>
+                </div>
+
+                <div class="skill-card">
+                    <svg class="skill-icon" viewBox="0 0 24 24">
+                        <rect x="5" y="5" width="14" height="14" rx="3" />
+                        <text x="12" y="14" text-anchor="middle" font-size="6" fill="currentColor">JS</text>
+                    </svg>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="skill-card">
+                    <svg class="skill-icon" viewBox="0 0 24 24">
+                        <polygon points="12,3 20,8 20,16 12,21 4,16 4,8" />
+                    </svg>
+                    <span>Node.js</span>
+                </div>
+
+                <div class="skill-card">
+                    <svg class="skill-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="8" />
+                        <path d="M6 12h12M6 8h12M6 16h12" />
+                    </svg>
+                    <span>SQL</span>
+                </div>
+
+                <div class="skill-card">
+                    <svg class="skill-icon" viewBox="0 0 24 24">
+                        <path d="M12 3l8 4v5c0 5-4 8-8 9-4-1-8-4-8-9V7l8-4z" />
+                    </svg>
+                    <span>Ciberseguridad</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section">
+        <div class="projects-grid">
+
+            <!-- FRONTEND -->
+            <div class="project-card">
+                <span class="project-tag project-tag--frontend">Frontend</span>
+
+                <h3>Portfolio Personal – UI + Estilos con SASS</h3>
+
+                <p>
+                    Sitio web responsive desarrollado para un consultorio de imágenes médicas.
+                    Implementa estructura modular con SASS, organización en partials,
+                    diseño adaptable y micro-interacciones suaves.
+                </p>
+
+                <div class="project-tech">
+                    <span>HTML5</span>
+                    <span>CSS</span>
+                    <span>SASS</span>
+                    <span>Bootstrap</span>
+                    <span>Responsive</span>
+                </div>
+
+                <div class="project-links">
+                    <a class="project-btn" href="https://github.com/sofiaaranoibarra/SitioWebConsultorioImagenes"
+                        target="_blank">GitHub</a>
+                    <a class="project-btn project-btn--primary"
+                        href="https://sofiaaranoibarra.github.io/SitioWebConsultorioImagenes/" target="_blank">Demo</a>
+                </div>
+            </div>
+
+            <!-- FRONTEND + JS -->
+            <div class="project-card">
+                <span class="project-tag project-tag--frontend">Frontend</span>
+
+                <h3>Agenda de Turnos – HTML, CSS y JavaScript</h3>
+
+                <p>
+                    Aplicación interactiva para gestión básica de turnos.
+                    Implementa manipulación del DOM, eventos, validaciones simples
+                    y estructura clara en JavaScript puro.
+                </p>
+
+                <div class="project-tech">
+                    <span>HTML5</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>DOOM</span>
+                    <span>Frameworks</span>
+                </div>
+
+                <div class="project-links">
+                    <a class="project-btn" href="https://github.com/sofiaaranoibarra/AgendaDeTurnos"
+                        target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <!-- BACKEND -->
+            <div class="project-card">
+                <span class="project-tag project-tag--backend">Backend</span>
+
+                <h3>API REST – Gestión de Productos</h3>
+
+                <p>
+                    Proyecto backend desarrollado con Node.js y Express.
+                    Implementa operaciones CRUD, persistencia con File System
+                    y organización modular en rutas y controladores.
+                </p>
+
+                <div class="project-tech">
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>File System</span>
+                    <span>API REST</span>
+                    <span>MongoDB</span>
+                </div>
+
+                <div class="project-links">
+                    <a class="project-btn" href="https://github.com/sofiaaranoibarra/proyectoBackend"
+                        target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2>Contacto</h2>
+
+            <form id="contactForm" class="contact-form">
+                <input type="text" name="name" placeholder="Tu nombre" required />
+                <input type="email" name="email" placeholder="Tu email" required />
+                <textarea name="message" rows="5" placeholder="Tu mensaje"></textarea>
+                <button type="submit" class="btn-primary">Enviar mensaje</button>
+            </form>
+
+            <p id="formResponse" class="form-response"></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Sofia Arano Ibarra | Portfolio Personal</p>
+        </div>
+    </footer>
+</body>
+
+</html>

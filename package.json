@@ -1,0 +1,50 @@
+{
+  "name": "sofi-dev",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "sass": "sass public/scss/styles.scss public/css/estilos.css",
+    "sass:watch": "sass --watch public/scss:public/css"
+  },
+  "devDependencies": {
+    "sass": "^1.97.3"
+  },
+  "description": "es mi porfotolio personal, donde muestro mis proyectos y mis conocimientos",
+  "main": "server.js",
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "detect-libc": "^2.1.2",
+    "immutable": "^5.1.4",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "node-addon-api": "^7.1.1",
+    "picomatch": "^4.0.3",
+    "readdirp": "^4.1.2",
+    "source-map-js": "^1.2.1",
+    "express": "^4.18.2"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofiaaranoibarra/mi-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "backend",
+    "frontend",
+    "desarrollo",
+    "web",
+    "html5",
+    "css",
+    "sass",
+    "js",
+    "bootstrap"
+  ],
+  "author": "Sofia Arano Ibarra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sofiaaranoibarra/mi-portfolio/issues"
+  },
+  "homepage": "https://github.com/sofiaaranoibarra/mi-portfolio#readme"
+}

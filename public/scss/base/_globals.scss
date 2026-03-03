@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(
+    circle at top,
+    #12182a 0%,
+    #0b0f19 60%
+  );
+  color: v.$text-light;
+  transition: v.$transition;
+}
+
+.container {
+  @include m.container;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
