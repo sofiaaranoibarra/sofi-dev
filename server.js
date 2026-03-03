@@ -3,19 +3,24 @@ import contactRoutes from "./routes/contact.routes.js";
 import path from "path";
 
 const app = express();
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Archivos estáticos
+// Static (public es la raíz)
 app.use(express.static("public"));
 
-// Rutas
+// Ruta principal: index.html en la raíz del proyecto
+app.get("/", (req, res) => {
+  res.sendFile(path.join(process.cwd(), "index.html"));
+});
+
+// API routes
 app.use("/contact", contactRoutes);
 
-// Servidor
+// Start
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en puerto ${PORT}`);
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
